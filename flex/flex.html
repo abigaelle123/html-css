@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style media="screen">
+			body{
+				background: blue;
+
+			}
+			.container{
+				display: flex; 
+				flex-wrap: wrap; 
+				/*COMME UN FLOAT
+				justify-content: space-between;
+				height: 300px;
+				align-items: stretch;
+				display: flex; */
+				justify-content: center;
+			}
+			
+			.container .nav{
+				background: #c1b5b2;
+				
+			}
+			
+			.container .contenu{
+				background: #FF0;
+				align-items: stretch;
+				height: 900px;
+				width: 960px; 
+				
+			}
+			
+			footer, header{
+				background: gray;
+				height: 100px; 
+				margin: 10px 20px;				
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+	<header>GABARIT 02 
+	<p>en-tête, corps et pied de page séparés, menu vertical à gauche, largeur fixe 960px</p></header>
+	
+		<div class="container"> 
+	 	<div class="nav">
+		 	<ul>
+		 		<li>BTN_1</li>
+		 		<li>BTN_2</li>
+		 		<li>BTN_3</li>
+		 		<li>BTN_4</li>
+		 		<li>BTN_5</li>
+		 	</ul>
+		 </div>
+			<div class="contenu">contenu</div>
+			
+		</div>
+	<footer></footer>
+	</body>
+</html>

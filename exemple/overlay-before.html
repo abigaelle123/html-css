@@ -1,0 +1,41 @@
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Overlay</title>
+		<style media="screen">
+			.overlay{
+				position: relative; 
+				width: 250px; 
+				line-height: 0;
+			}
+			.overlay img{
+				width: 100%; 
+			}
+			/*plus pour les images si c'est une div de preference ne pas mettre de before*/
+			.overlay::before{
+				content: ""; 
+				display: block; 
+				position: absolute; 
+				top: 0; 
+				bottom: 0; 
+				left: 0; 
+				right: 0; 
+				opacity: 0;
+				background-image: url(img/home-clients-01.svg);
+				background-repeat: no-repeat; 
+				background-position: 50% 50%; 
+				background-color: rgba(0,0,0,0.5);
+				transition: all 0.5s;
+			}
+			.overlay:hover:before{
+				opacity: 0.5;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="overlay">
+			<img src="img/home-company-heads-01-30f1193b.webp" alt="CEO company">
+		</div>
+	</body>
+</html>

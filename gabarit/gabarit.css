@@ -1,0 +1,52 @@
+body{
+	background: #0AF; 
+}
+
+.container{
+	width: 990px; 
+	margin: 0 auto; 	
+}
+
+header, footer{
+	padding: 10px; 
+	background: #888;
+}
+
+.container .content{
+	display: flex; 
+	background: #EEE; 
+}
+
+.container .content nav{
+	width: 190px; 
+	background: #AAA; 
+}
+
+.content section {
+	width: 800px; 
+}
+.content article{
+	padding: 10px; 
+}
+nav li{
+	list-style: none; 
+}
+nav ul{
+	padding-left: 0px; 
+	margin-top: 0;
+}
+nav a{
+	display: block; 
+	padding: 25px; 
+	margin: 16px; 
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	background: #555; 
+}
+nav a:hover{
+	background: #777; 
+	text-decoration: underline; 
+}
+
+

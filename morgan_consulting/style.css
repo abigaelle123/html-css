@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    background: #FFF;
+}
+
+.container > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-main,
+.menu-main ul {
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.menu-main ul {
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-main li:nth-last-child(n+2) a {
+    transition: all 0.5s;
+    display: block;
+    padding: 40px 20px;
+    text-decoration: none;
+    color: #000;
+}
+.menu-main li:nth-last-child(n+2) a:hover {
+    color: #b7a088;
+}
+
+.menu-main li:last-child {
+    padding-left: 20px;
+}
+
+.menu-main .btn {
+    background: #1e3684;
+    color: #FFF;
+}
+.menu-main .btn:hover {
+    color: #1e3684;
+    border-color: #1e3684;
+    background: #FFF;
+}
+
+/*Menu deroulant*/
+
+/**
+ * Gestion Zone message
+ */
+.block {
+    background-image: url(img/home-hero-01dee49d.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+}
+
+.slogan .item {
+    width: 50%;
+}
+.square {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background: #1e3684;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    padding: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.message-zone {
+    margin-bottom: 40px;
+    color: rgba(255,255,255,.7);
+}
+
+.message-zone h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: rgba(255,255,255,1);
+}
+
+
+
+/**
+ * Gestion BTN
+ */
+.btn {
+    display: inline-block;
+    background-color: #b7a088;
+    color: rgba(255,255,255,.7);
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 25px;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+.btn:hover {
+    color: #b7a088;
+    background-color: rgba(255,255,255, 1);
+}
+
+
+/**
+ * Gestion services
+ */
+.services {
+    display: flex;
+    margin: 25px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services div {
+    line-height: 1.7rem;
+    text-align: center;
+    width: 23%;
+    padding: 30px;
+    box-shadow: 0px 0px 0px #FFF;
+    transition: all 0.5s;
+
+}
+
+.services div:hover {
+    box-shadow: 0px 8px 14px #DDD;
+}
+
+.services div h2 {
+    margin: 25px 0;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 940px;
+    }
+	
+}
+
+
+
+@media (max-width: 960px) {
+    .container {
+        width: 748px;
+    }
+    .slogan .item {
+        width: 100%;
+		
+    }	
+}
+
+@media (max-width: 760px) {
+    .container {
+		/*unite vw comme pourcentage 25% de hauteur interessant  */
+        width: 100%;
+	}	
+	 .services div {
+        width: 45%;
+    }
+	.container > header{
+		flex-direction: column; 
+		padding-top: 40px;  
+	}
+	
+	.menu-main ul > li{
+		display: none; 
+		text-align: center; 
+		width: 100%; 
+	}
+	.menu-main li.current{
+		display: block;
+	}
+	.container > header nav{
+		height: 98px; 
+	}
+	.container > header nav, 
+	.menu-main ul{
+		width: 100%;
+		position: relative; 
+	}
+	.menu-main ul{
+		position: absolute;
+		z-index: 999; 
+		flex-wrap: wrap;
+		padding-left: 60px; 
+		background-color: #FFF; 
+		background-image: url(img/menu.svg); 
+		background-position: 0% 50%;
+		background-repeat: no-repeat; 
+	}
+	.menu-main ul:hover{
+		background-position: 0% 7%;
+	}
+	.menu-main ul:hover li{
+		display: block; 
+	}
+	.menu-main li:last-child{
+		padding: 20px 0; 
+	}
+}
+@media (max-width: 760px) {
+    .container {
+		/*unite vw comme pourcentage 25% de hauteur interessant  */
+        width: 100%;
+	}	
