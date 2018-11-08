@@ -1,0 +1,41 @@
+html, body{
+	font-size: 14px; 
+}
+.container{
+	width: 500px; 
+	margin: 0 auto;
+	
+}
+.container article{
+	padding: 6px; 
+	border: 1px solid #444;
+	font-family: Arial, Arial, Helvetica, sans-serif; 
+	font-size: 0.85rem;
+	line-height: 1.2rem;
+	margin-bottom: 10px;
+}
+
+.container article img{
+	float: right; 
+	margin: 0px, 0px, 10px, 10px;
+	margin-bottom: 10px;
+}
+
+.container article h2{
+	padding: 0 6px; 
+	border: 0.5px solid #444;
+	background-image: url(img/image-titre.png);
+	background-color: #eee; 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	font-size: 1rem; 
+	margin-top: 0; 	
+}
+.container article ul {
+	padding-left: 15px;
+	list-style: square; 
+}
+.readmore{
+	font-style: italic ; 
+	padding-left: 35px; 
+}
